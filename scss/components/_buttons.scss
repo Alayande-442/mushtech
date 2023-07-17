@@ -1,0 +1,29 @@
+@use'../custom' as *;
+@use'../components/mixins' as *;
+
+.navbar-buttons {
+
+    .navbar-btn {
+        width: 12rem;
+        padding: 1rem;
+        margin: .3rem;
+        font-size: 1.4rem;
+        
+        font-weight: 600;
+       
+    }
+
+    .for-booking {
+        border: none;
+        border: .2rem solid $secondary-color;
+        color: $primary-color;
+        background-color: $white;
+        
+    }
+
+    .join-us {
+        background-color: $secondary-color;
+        border: none;
+
+    }
+}

@@ -1,0 +1,27 @@
+// GREY COLORS
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+
+// CUSTOM GREY FOR TEXT
+$dark-grey: #333;
+$ligher-grey: #6f6f6f;
+
+// CUSTOM COLORS
+$primary-color: #070e3d;
+$secondary-color: #fd6c29;
+$secondary-light-color: #f67c44;
+$tertiary-color: #010209;
+$tertiary-light-color: #010413;
+
+
+// BOOTSTRAP IMPORT FILES
+@import"../node_modules/bootstrap/scss/bootstrap.scss";
