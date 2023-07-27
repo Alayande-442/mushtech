@@ -1,4 +1,5 @@
 const dropdownItems = document.querySelectorAll('.nav-list-hover')
+const gradientValue = 
 
 dropdownItems.forEach(dropdownItem => {
     dropdownItem.addEventListener("mouseover",() => {
@@ -15,38 +16,42 @@ dropdownItems.forEach(dropdownItem => {
 
 // *********** slide background *****************//
 
-function slideBackground() {
-    const slideBackgroundContainer = document.querySelector('.slideBackground');
-  
-    for (let i = 0; i <= 3; i++) {
-      const div = document.createElement('div');
-      div.style.backgroundImage = `url(/images/landing-${i}.jpg)`
-  
-      if (i === 1) {
-        div.classList.add('change');
-      }
-  
-      slideBackgroundContainer.appendChild(div);
+function slideShowDivs() {
+    for (let i = 0; i <= 4; i++) {
+        const div = document.createElement('div')
+
+        div.style.backgroundImage = `url(images/landing-${i}.jpg)`
+
+        i === 1 && div.classList.add('change')
+
+        document.querySelector('.slideshow').appendChild(div)
     }
-  }
-  
-  slideBackground();
 
-const divs = document.querySelectorAll('.slideBackground div')
+}
+
+slideShowDivs()
+
+
+const divs = document.querySelectorAll('.slideshow div')
 let a = 1
-const slideshow = ()=> {
-    setInterval(()=> {
-        a++
-        const div  = document.querySelector('.slideBackground .change');
-        div.classList.remove('change');
 
-        if (a < divs.length) {
+const slideshow = () => {
+    setInterval(() => {
+        a++
+        const div = document.querySelector('.slideshow .change')
+        div.classList.remove('change')
+
+        if(a < divs.length) {
             div.nextElementSibling.classList.add('change')
+
         }else {
             divs[0].classList.add('change')
             a = 1
         }
-    }, 20000)
+
+        
+
+    }, 5000)
 }
 
-slideshow();
+slideshow()
