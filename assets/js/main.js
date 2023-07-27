@@ -16,16 +16,21 @@ dropdownItems.forEach(dropdownItem => {
 // *********** slide background *****************//
 
 function slideBackground() {
+    const slideBackgroundContainer = document.querySelector('.slideBackground');
+  
     for (let i = 0; i <= 3; i++) {
-        const div  = document.createElement('div');
-        div.style.backgroundImage = `url(images/landing-${i}.jpg)`;
-
-        i === 1 && div.classList.add('change');
-        document.querySelector('slideBackground').appendChild('div');
+      const div = document.createElement('div');
+      div.style.backgroundImage = `url(/images/landing-${i}.jpg)`
+  
+      if (i === 1) {
+        div.classList.add('change');
+      }
+  
+      slideBackgroundContainer.appendChild(div);
     }
-}
-
-slideBackground();
+  }
+  
+  slideBackground();
 
 const divs = document.querySelectorAll('.slideBackground div')
 let a = 1
@@ -41,7 +46,7 @@ const slideshow = ()=> {
             divs[0].classList.add('change')
             a = 1
         }
-    }, 2000)
+    }, 20000)
 }
 
 slideshow();

@@ -11850,6 +11850,23 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+html {
+  font-size: 62.5%;
+}
+
+*, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  font-family: "Oswald", serif;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 .navbar-buttons .navbar-btn {
   width: 12rem;
   padding: 1rem;
@@ -11876,26 +11893,26 @@ textarea.form-control-lg {
   top: 0;
   z-index: -1;
 }
-.slide-background.div {
+.slide-background div {
   width: 100%;
   height: 100%;
   position: absolute;
+  background-image: url("/images/landing-1.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   opacity: 0;
   transition: opacity 5s;
 }
-.slide-background.div.change {
+.slide-background div.change {
   opacity: 1;
 }
 
 .top-header-wrapper {
   position: relative;
-  background-image: url("images/landing-1.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  width: 100%;
+  height: 120vh;
+  overflow: hidden;
 }
 
 .top-header {
@@ -12019,23 +12036,6 @@ textarea.form-control-lg {
 .nav-dropdown .nav-dropdown-item .nav-dropdown-link-2 {
   font-size: 1.2rem;
   color: #f67c44;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-*, body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style-type: none;
-  font-family: "Oswald", serif;
-  outline: none;
-}
-
-a {
-  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */
