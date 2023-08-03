@@ -26,3 +26,33 @@
    
 }
 
+// ***** landing page text *****//
+.rate-form {
+    padding: 7rem 0 0 8rem;
+
+
+    &__title {
+        color: #fff;
+        font-weight: 300;
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+
+
+    }
+    &__description1 {
+        color: $white;
+        font-size: 5rem;
+        font-weight: 100;
+
+        strong {
+            color: $secondary-light-color;
+        }
+
+    }
+    &__description2 {
+        font-size: 2rem;
+        color: $ligher-grey;
+
+    }
+}
+

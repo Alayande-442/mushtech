@@ -11907,6 +11907,28 @@ a {
   opacity: 1;
 }
 
+.rate-form {
+  padding: 7rem 0 0 8rem;
+}
+.rate-form__title {
+  color: #fff;
+  font-weight: 300;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.rate-form__description1 {
+  color: #fff;
+  font-size: 5rem;
+  font-weight: 100;
+}
+.rate-form__description1 strong {
+  color: #f67c44;
+}
+.rate-form__description2 {
+  font-size: 2rem;
+  color: #6f6f6f;
+}
+
 .top-header-wrapper {
   position: relative;
   width: 100%;
