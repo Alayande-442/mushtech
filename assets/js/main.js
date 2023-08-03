@@ -1,5 +1,6 @@
+// ************* Drop down section **************
+
 const dropdownItems = document.querySelectorAll('.nav-list-hover')
-const gradientValue = 
 
 dropdownItems.forEach(dropdownItem => {
     dropdownItem.addEventListener("mouseover",() => {
