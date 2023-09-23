@@ -1,5 +1,6 @@
 @use'../custom' as *;
 @use'../components/mixins' as *;
+@use'../sections/hero' as *;
 
 .navbar-buttons {
 
@@ -25,4 +26,28 @@
         border: none;
 
     }
+}
+
+
+// ************READMORE BUTTON *******************
+.text__btn {
+    display: inline-block;
+    width: 13rem;
+    height: 5rem;
+    border: 1px solid $white;
+    padding: .8rem;
+    margin: 5rem 0 2rem 0;
+    font-size: 2rem;
+    font-weight: bold;
+    // line-height: normal;
+    text-align: center;
+    border-radius: 3px;
+    color: $secondary-light-color;
+
+    &:hover {
+        color: $white;
+        background-color: $secondary-light-color;
+        transition: .3s ease-in-out;
+    }
+
 }

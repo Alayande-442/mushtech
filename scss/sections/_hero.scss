@@ -54,5 +54,37 @@
         color: $ligher-grey;
 
     }
+   
 }
 
+// ******************* Form and intro text section ***********************//
+
+.rate-form-section {
+    .container {
+        .row {
+            .text {
+                font-family: sans-serif;
+                line-height: 1.8;
+
+                h2 {
+                    margin-bottom: 2.5rem;
+                    font-weight: bolder;
+                    font-size: 2.5rem;
+                    color: $tertiary-color;
+                    font-weight: 3rem;
+
+                }
+
+                p {
+                    font-size: 2rem;
+                    color: $gray-600;
+                    letter-spacing: 2px;
+                    margin-left: -5rem;
+                }
+            }
+
+        }
+
+    }
+
+}
