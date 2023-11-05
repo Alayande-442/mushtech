@@ -11852,6 +11852,7 @@ textarea.form-control-lg {
 }
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 *, body {
@@ -11929,6 +11930,35 @@ a {
   margin-left: -5rem;
 }
 
+.floating-bg {
+  width: 150vw;
+  height: 150vw;
+  background-color: rgba(207, 238, 242, 0.1);
+  position: absolute;
+  top: -95vw;
+  left: calc(50% - 75vw);
+  border-radius: 30%;
+  animation: rotate 30s infinite;
+}
+.floating-bg .floating-bg::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(50, 231, 255, 0.1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 40%;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate 0;
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .navbar-buttons .navbar-btn {
   width: 12rem;
   padding: 1rem;
